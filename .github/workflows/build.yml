@@ -26,7 +26,7 @@ jobs:
           Expand-Archive -Force latest.zip "$env:AppData\XIVLauncher\addon\Hooks\dev"
 
       - name: Build
-        run: dotnet build SanctumPresets/SanctumPresets.csproj --configuration Release
+        run: dotnet build SanctumPresetsRepo/SanctumPresets.csproj --configuration Release
 
       - name: Store build
         uses: actions/upload-artifact@v4
